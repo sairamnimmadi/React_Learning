@@ -92,11 +92,13 @@ class Header extends Component {
                     <span className="fa fa-address-card fa-lg" /> Contact Us
                   </NavLink>
                 </NavItem>
-                <NavItem>
-                  <NavLink className="nav-link" to="/github" target="_blank">
-                    <span className="fa fa-github fa-lg" /> Git Hub
-                  </NavLink>
-                </NavItem>
+                <Nav navbar>
+                  <NavItem>
+                    <Button outline onClick={() => window.open("https://github.com/sairamnimmadi/React_Learning", "_blank")}>
+                      <span className="fa fa-github fa-lg" /> Git Hub
+                  </Button>
+                  </NavItem>
+                </Nav>
               </Nav>
               <Nav className="ml-auto" navbar>
                 <NavItem>
