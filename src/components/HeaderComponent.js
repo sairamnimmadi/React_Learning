@@ -47,11 +47,11 @@ class Header extends Component {
     this.toggleModal();
     alert(
       "Username: " +
-        this.username.value +
-        " Password: " +
-        this.password.value +
-        " Remember: " +
-        this.remember.checked
+      this.username.value +
+      " Password: " +
+      this.password.value +
+      " Remember: " +
+      this.remember.checked
     );
     event.preventDefault();
   }
@@ -90,6 +90,11 @@ class Header extends Component {
                 <NavItem>
                   <NavLink className="nav-link" to="/contactus">
                     <span className="fa fa-address-card fa-lg" /> Contact Us
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink className="nav-link" to="/github" target="_blank">
+                    <span className="fa fa-github fa-lg" /> Git Hub
                   </NavLink>
                 </NavItem>
               </Nav>

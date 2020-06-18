@@ -122,6 +122,7 @@ class Main extends Component {
                 />
                 <Route path="/menu/:dishId" component={DishWithId} />
                 <Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm} postFeedback={this.props.postFeedback} />} />
+                <Route exact path="/github" render={() => (window.location = "https://github.com/sairamnimmadi/React_Learning.git")} />
                 <Redirect to="/home" />
               </Switch>
             </CSSTransition>
